@@ -5,7 +5,7 @@ const knexInstance = knex({
   client: 'pg',
   connection: 'process.env.DB_URL',
 })
-
+console.log(process.env.DB_URL);
 // const q1 = knexInstance('amazong_products').select('*').toQuery()
 //  const q2 = knexInstance.from('amazong_products').select('*').toQuery()
 
